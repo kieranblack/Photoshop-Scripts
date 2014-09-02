@@ -26,6 +26,7 @@ function getLayerKindByID(id){
       case 'vibrance' : return LayerKind.VIBRANCE;
       
       
+      
 			case 'brightnessEvent' : return LayerKind.BRIGHTNESSCONTRAST;
 			case 'channelMixer' : return LayerKind.CHANNELMIXER;
 			case 'curves' : return LayerKind.CURVES;
