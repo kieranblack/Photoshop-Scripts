@@ -24,15 +24,12 @@ function getLayerKindByID(id){
       case 'blackAndWhite' : return LayerKind.BLACKANDWHITE;
       case 'selectiveColor' : return LayerKind.SELECTIVECOLOR;
       case 'vibrance' : return LayerKind.VIBRANCE;
-      
-      
-      
-			case 'brightnessEvent' : return LayerKind.BRIGHTNESSCONTRAST;
-			case 'channelMixer' : return LayerKind.CHANNELMIXER;
-			case 'curves' : return LayerKind.CURVES;
-			case 'exposure' : return LayerKind.EXPOSURE;
-			default : return typeIDToStringID(desc.getList(stringIDToTypeID('adjustment')).getClass(0));
-		}
-	}
-	return LayerKind.NORMAL;
+      case 'brightnessEvent' : return LayerKind.BRIGHTNESSCONTRAST;
+      case 'channelMixer' : return LayerKind.CHANNELMIXER;
+      case 'curves' : return LayerKind.CURVES;
+      case 'exposure' : return LayerKind.EXPOSURE;
+      default : return typeIDToStringID(desc.getList(stringIDToTypeID('adjustment')).getClass(0));
+    }
+  }
+  return LayerKind.NORMAL;
 };
