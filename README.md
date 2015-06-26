@@ -1,4 +1,4 @@
-photoshopScripts
+Photoshop Scripts
 ================
 
 A few Photoshop scripts to get you going
